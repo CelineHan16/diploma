@@ -1,0 +1,12 @@
+.Footer {
+  background-color: #0b1c2c;
+  color: #efeee8;
+  padding: 1rem;
+  text-align: center;
+}
+p {
+  font-size: .8rem;
+}
+a {
+  color: #efeee8;
+}
