@@ -9,5 +9,14 @@
   background-color: rgba(0, 0, 0, .1);
 }
 .NavItem a.active {
-  border-color: white;
+  border-color: #0b1c2c;
+}
+.Logo {
+  font-size: 1.3rem;
+  letter-spacing: .1em;
+  color: #0b1c2c;
+  padding: 0rem;
+}
+.Logo:hover {
+  background-color: transparent;
 }

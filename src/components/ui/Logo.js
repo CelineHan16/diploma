@@ -4,7 +4,7 @@ import "./Logo.css";
 function Logo() {
   return (
     <div className="Logo">
-      <a href="/">Bakery Paradise</a>
+      Bakery Paradise
     </div>
   );
 }

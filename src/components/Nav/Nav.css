@@ -16,4 +16,8 @@
   margin: 0;
   display: flex;
 }
+.Logo {
+  list-style-type: none;
+  
+}
 
