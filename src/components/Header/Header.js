@@ -1,5 +1,6 @@
 import "./Header.css";
 import headerImage from "../../assets/header-img1.jpg";
+import React from "react";
 
 function Header() {
   const style = {

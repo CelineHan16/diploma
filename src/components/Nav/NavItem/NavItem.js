@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./NavItem.css";
+import React from "react";
 
 function NavItem(props) {
   return (
