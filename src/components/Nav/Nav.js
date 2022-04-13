@@ -2,6 +2,7 @@ import "./Nav.css";
 import Logo from "../ui/Logo";
 import NavItem from "./NavItem/NavItem";
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Nav() {
   return (
@@ -12,7 +13,7 @@ function Nav() {
         <NavItem url="/delivery">Delivery</NavItem>
         <NavItem url="/location">Location</NavItem>
       </ul>
-      <NavItem url="/" className="Logo"><Logo /></NavItem>
+      <NavLink to="/" className="Logo"><Logo /></NavLink>
       <ul>
         <NavItem url="/about">About</NavItem>
         <NavItem url="/unveil">Unveil</NavItem>
