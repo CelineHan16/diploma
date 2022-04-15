@@ -12,7 +12,7 @@
 }
 .NavItem a:hover {
   background-color: rgba(0, 0, 0, .1);
-  color: #0062be;
+  color: #0259aa;
 }
 .NavItem > a::before {
   content: " ";
@@ -28,7 +28,7 @@
 }
 .Logo {
   font-size: 1.6rem;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: .2em;
   color: #0b1c2c;
   padding: 0rem;

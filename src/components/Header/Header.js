@@ -4,14 +4,17 @@ import React from "react";
 
 function Header() {
   const style = {
-    backgroundImage: `url(${headerImage})`
+    backgroundImage: `url(${headerImage})`,
+    backgroundPosition: "top"
   };
 
   return (
     <header className="Header" style={style}>
       <div className="Container">
-        <h1>Making sweet things happen. <br /> We create delicious memories.</h1>
+      <div className="blur">
+      <h1>Making sweet things happen. <br /> We create delicious memories.</h1>
         <p>Freshly baked Everyday.</p>
+      </div>
       </div>
     </header>
   );

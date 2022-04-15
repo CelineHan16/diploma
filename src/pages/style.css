@@ -1,6 +1,11 @@
 article {
   padding: 10px 25px;
 }
-p {
-  font-size: 17px;
+article > h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  letter-spacing: .5px;
+}
+article > p {
+  font-size: 16px;
+  font-family: 'Libre Baskerville', serif;
 }
