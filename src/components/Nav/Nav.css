@@ -20,10 +20,7 @@
   font-size: 1.3rem;
   letter-spacing: .1em;
   color: #0b1c2c;
-  padding: 0rem;
+  padding: 0;
   text-decoration: none;
-}
-.Logo:hover {
-  background-color: transparent;
 }
 
