@@ -11,10 +11,10 @@ function Header() {
   return (
     <header className="Header" style={style}>
       <div className="Container">
-      <div className="blur">
-      <h1>Making sweet things happen. <br /> We create delicious memories.</h1>
-        <p>Freshly baked Everyday.</p>
-      </div>
+        <div className="blur">
+          <h1>Making sweet things happen. <br /> We create delicious memories.</h1>
+          <p>Freshly baked Everyday.</p>
+        </div>
       </div>
     </header>
   );

@@ -22,9 +22,24 @@
   color: #0b1c2c;
   padding: 0;
   text-decoration: none;
+  margin: 0 auto;
+  /* flex-grow: 1; */
+}
+.Nav .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0b1c2c;
 }
 .Nav .searchIcon {
-  width: 20px;
-  padding: 1rem;
-  color: #0b1c2c;
+  width: 15px;
+  padding: .9rem;
+}
+.Nav .cartIcon {
+  width: 14px;
+  padding: .9rem;
+}
+.Nav .userIcon {
+  width: 14px;
+  padding: .9rem;
 }
