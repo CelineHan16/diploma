@@ -1,28 +1,30 @@
 .Nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: #efeee8;
   padding: 0 1.5rem;
 
-  position: sticky;
+  /* position: sticky;
   top: 0;
   left: 0;
-  right: 0;
+  right: 0; */
 }
-.Nav ul, li {
+.Nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
 .NavLink .Logo {
-  font-size: 1.3rem;
-  letter-spacing: .1em;
+  /* font-size: 1.3rem; */
+  /* letter-spacing: .1em; */
   color: #0b1c2c;
-  padding: 0;
+  /* padding: 0; */
   text-decoration: none;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* flex-grow: 1; */
 }
 .Nav .icons {
