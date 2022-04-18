@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Header from "./components/Header/Header";
+// import Header from "./components/Header/Header";
 import Layout from "./components/Layout/Layout";
 
 import Shop from "./pages/Shop";
@@ -16,8 +16,6 @@ import Home from "./pages/Home";
 function App() {
   return (
     <div className="App">
-      
-      <Header />
 
       <Layout>
         <Routes>
