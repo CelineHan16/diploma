@@ -1,12 +1,17 @@
 import React from "react";
-import "./style.css";
+import Header from "../components/Header/Header";
+import headerImage from "../assets/aboutHeader-img.jpg";
+// import "./style.css";
 
 function About() {
   return (
-    <article>
-      <h1>This is about page.</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex pariatur voluptatum doloribus enim repudiandae ullam sequi quo suscipit voluptas id, laboriosam necessitatibus, dolore corrupti. Explicabo iure doloribus illum repudiandae tenetur.</p>
-    </article>
+    <>
+      <Header
+        title="About us"
+        image={headerImage}>
+        A Bakery Paradise is an establishment that produces and sells flour-based food baked in an oven such as bread, cookies, cakes, donuts, pastries, and pies. Some retail bakeries are also categorized as cafés, serving coffee and tea to customers who wish to consume the baked goods on the premises. Confectionery items are also made in most bakeries throughout the world.
+      </Header>
+    </>
   );
 }
 

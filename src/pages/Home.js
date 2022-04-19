@@ -9,7 +9,7 @@ function Home() {
       <Header
         title="Making sweet things happen. We create delicious memories."
         image={headerImage}>
-
+        Freshly baked Everyday.
       </Header>
     </>
   );
