@@ -40,13 +40,13 @@ function Shop() {
       image: whiteChocolateFudgeImage,
       path: "/",
       title: "White Chocolate Cranberry Pistachio Fudge",
-      price: 10,
+      price: "20",
     },
     strawberryCupcakes: {
       image: strawberryCupcakesImage,
       path: "/",
       title: "Chocolate Strawberry Cupcakes",
-      price: 10,
+      price: 15,
     },
   };
 
