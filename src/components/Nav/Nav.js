@@ -1,4 +1,4 @@
-import "./Nav.css";
+import classes from  "./Nav.module.css";
 import Logo from "../ui/Logo";
 import NavItem from "./NavItem/NavItem";
 import React from "react";
@@ -9,21 +9,21 @@ import User from "../../assets/userIcon.svg";
 
 function Nav() {
   return (
-    <nav className="Nav">
-      <div className="container">
+    <nav className={classes.Nav}>
+      <div className={classes.container}>
         <ul>
           <NavItem url="/shop">Shop</NavItem>
           <NavItem url="/specialdays">Special days</NavItem>
           <NavItem url="/delivery">Delivery</NavItem>
           <NavItem url="/location">Location</NavItem>
         </ul>
-        <NavLink to="/" className="Logo"><Logo /></NavLink>
+        <NavLink to="/"><Logo /></NavLink>
         <ul>
           <NavItem url="/about">About</NavItem>
           <NavItem url="/account">Contacts</NavItem>
-          <NavLink to="/search" className="icons"><img src={Search} className="searchIcon" alt="Search" /></NavLink>
-          <NavLink to="/user" className="icons"><img src={User} className="userIcon" alt="Account" /></NavLink>
-          <NavLink to="/cart" className="icons"><img src={Cart} className="cartIcon" alt="Cart" /></NavLink>
+          <NavLink to="/search" className={classes.icons}><img src={Search} className={classes.searchIcon} alt="Search" /></NavLink>
+          <NavLink to="/user" className={classes.icons}><img src={User} className={classes.userIcon} alt="Account" /></NavLink>
+          <NavLink to="/cart" className={classes.icons}><img src={Cart} className={classes.cartIcon} alt="Cart" /></NavLink>
         </ul>
       </div>
     </nav>

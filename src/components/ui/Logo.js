@@ -1,9 +1,10 @@
 import React from "react";
-import "./Logo.css";
+import classes from "./Logo.module.css"
+
 
 function Logo() {
   return (
-    <div className="Logo">
+    <div className={classes.Logo}>
       Bakery Paradise
     </div>
   );
