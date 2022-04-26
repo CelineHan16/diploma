@@ -12,14 +12,14 @@ const products = [
     image: mixedBerryTartImage,
     productId: "mixed-berry-tart",
     title: "Mixed Berry Tart",
-    description: "Use your favorite combination of berries to top this play on a classic cheesecake. Lightly sweetened berries top pastry cream contained in a graham cracker crust.",
+    description: "Taste your favorite combination of berries to top this play on a classic cheesecake. Lightly sweetened berries top pastry cream contained in a graham cracker crust.",
     price: 11,
   },
   {
     image: whiteChocolateSalamiImage,
     productId: "white-chocolate-salami",
     title: "White Chocolate Salami",
-    description: "Cranberry Pistachio White Chocolate Truffles are super cute and festive no-bake dessert! This is the tastiest Christmas dessert recipe ever!",
+    description: "Cranberry Pistachio White Chocolate Truffles are super cute and festive no-bake dessert! This is the tastiest Christmas dessert ever!",
     price: 12,
   },
   {
