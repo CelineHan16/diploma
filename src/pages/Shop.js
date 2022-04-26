@@ -2,7 +2,8 @@ import React from "react";
 import Header from "../components/Header/Header";
 import headerImage from "../assets/shopHeader-img.jpg";
 import ProductList from "../components/ProductList/ProductList";
-import { getProducts } from "../data/product";
+import { getProducts } from "../data/products";
+// import { Outlet } from "react-router-dom";
 
 
 
@@ -18,6 +19,7 @@ function Shop() {
       </Header>
 
       <ProductList products={getProducts()} />
+
     </>
   );
 }

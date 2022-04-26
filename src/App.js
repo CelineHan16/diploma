@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 // import Header from "./components/Header/Header";
-import Layout from "./components/Layout/Layout";
 
+import Layout from "./components/Layout/Layout";
 import Shop from "./pages/Shop";
 import Account from "./pages/Contacts";
 import About from "./pages/About";
@@ -11,6 +11,8 @@ import Delivery from "./pages/Delivery";
 import Location from "./pages/Location";
 import Unveil from "./pages/Unveil";
 import Home from "./pages/Home";
+import Product from "./pages/Product";
+import NotFound from "./pages/NotFound";
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/shop" element={<Shop />} />
+          <Route path="/shop/:productId" element={<Product />} />
           <Route path="/account" element={<Account />} />
           <Route path="/about" element={<About />} />
           <Route path="/specialdays" element={<SpecialDays />} />
@@ -27,6 +30,7 @@ function App() {
           <Route path="/location" element={<Location />} />
           <Route path="/unveil" element={<Unveil />} />
           <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
 
