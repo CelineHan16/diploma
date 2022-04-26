@@ -9,7 +9,7 @@ function Delivery() {
       <Header
         title="We have a delivery"
         image={headerImage}>
-        A Bakery Paradise is an establishment that produces and sells flour-based food baked in an oven such as bread, cookies, cakes, donuts, pastries, and pies. Some retail bakeries are also categorized as cafés, serving coffee and tea to customers who wish to consume the baked goods on the premises. Confectionery items are also made in most bakeries throughout the world.
+        Can't come to us? We'll come to you.
       </Header>
     </>
   );

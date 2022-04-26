@@ -9,7 +9,9 @@ function Account() {
       <Header
         title="Our contacts"
         image={headerImage}>
-        A Bakery Paradise is an establishment that produces and sells flour-based food baked in an oven such as bread, cookies, cakes, donuts, pastries, and pies. Some retail bakeries are also categorized as cafés, serving coffee and tea to customers who wish to consume the baked goods on the premises. Confectionery items are also made in most bakeries throughout the world.
+        Reach out at any time, we'd love to hear from you. <br/>
+        Our email: asanbekovafin@gmail.com <br/>
+        Our contacts: +996 708 820 706
       </Header>
     </>
   );
