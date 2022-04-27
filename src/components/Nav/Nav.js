@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 import Search from "../../assets/search.svg";
 import Cart from "../../assets/cartIcon.svg";
 import User from "../../assets/userIcon.svg";
+import NavToggle from "./NavToggle/NavToggle";
 
 function Nav() {
   return (
@@ -25,6 +26,7 @@ function Nav() {
           <NavLink to="/user" className={classes.icons}><img src={User} className={classes.userIcon} alt="Account" /></NavLink>
           <NavLink to="/cart" className={classes.icons}><img src={Cart} className={classes.cartIcon} alt="Cart" /></NavLink>
         </ul>
+        <NavToggle />
       </div>
     </nav>
   );

@@ -11,25 +11,20 @@
   position: relative;
   margin-bottom: 2rem;
 }
-.Container {
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-}
-.Container h1 {
+.Header section h1 {
   margin: 0;
   text-transform: uppercase;
   font-family: italic;
   font-size: 2rem;
 }
-.Container p {
+.Header section p {
   font-family: 'Libre Baskerville', serif;
   font-size: 1rem;
 }
 
-.blur{
+.Header section .blur{
   padding: 50px;
-  width: 500px;
+  /* width: 500px; */
   background-color: rgba(255, 255, 255, 0.123);
 }
 
@@ -44,12 +39,13 @@
 }
 .Header section {
   position: absolute;
-  bottom: 7rem;
-  right: px;
+  /* bottom: 7rem; */
+  left: 10rem;
   max-width: 500px;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
 
   padding: 0 2rem 0;
   border-radius: 2rem;
   font-size: 1.2rem;
+  text-align: center;
 }
