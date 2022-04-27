@@ -18,7 +18,7 @@ function Nav() {
           <NavItem url="/delivery">Delivery</NavItem>
           <NavItem url="/location">Location</NavItem>
         </ul>
-        <NavLink to="/"><Logo /></NavLink>
+        <NavLink to="/" className={classes.logo}><Logo /></NavLink>
         <ul>
           <NavItem url="/about">About</NavItem>
           <NavItem url="/account">Contacts</NavItem>

@@ -8,7 +8,7 @@
 }
 .ProductItem {
   position: relative;
-  flex: 0 0 30%;
+  flex: 0 0 350px;
   margin-bottom: 2rem;
   margin-top: 1rem;
   text-align: center;
@@ -22,12 +22,6 @@
   text-decoration: none;
   text-align: center;
   transition: .2s ease-in-out;
-  
-  /* display: inline-block;
-  vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  transition-duration: 0.3s;
-  transition-property: transform; */
 }
 .ProductItem a::before {
   content: '';

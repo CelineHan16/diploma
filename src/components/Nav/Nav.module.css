@@ -20,7 +20,7 @@
   margin: 0;
   display: flex;
 }
-.NavLink .Logo {
+.Nav .logo {
   font-size: 1.6rem;
   font-family: 'Roboto Slab', serif;
   letter-spacing: .2em;
