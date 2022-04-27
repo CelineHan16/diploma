@@ -4,9 +4,9 @@
   padding: 1rem;
   text-align: center;
 }
-p {
+.Footer p {
   font-size: .8rem;
 }
-a {
+.Footer a {
   color: #efeee8;
 }
