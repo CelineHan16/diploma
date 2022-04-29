@@ -8,7 +8,6 @@
   color: white;
   /* color: #0b1c2c; */
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
-  position: relative;
   margin-bottom: 2rem;
 }
 .Header section h1 {
@@ -34,6 +33,7 @@
   min-height: 380px;
   object-fit: cover;
   object-position: top;
+  position: relative;
 
   box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
@@ -45,6 +45,16 @@
 
   padding: 0 2rem 0;
   border-radius: 2rem;
-  font-size: 1.2rem;
   text-align: center;
+}
+@media (max-width: 900px) {
+  .Header section {
+    min-width: 200px;
+  }
+  .Header section h1 {
+    font-size: 1.8rem;
+  }
+  .Header section p {
+    font-size: .8rem;
+  }
 }
