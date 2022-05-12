@@ -5,7 +5,7 @@ import React from "react";
 function NavItem(props) {
   return (
     <li className={classes.NavItem}>
-      <NavLink to={props.url} active={props.active}>
+      <NavLink to={props.url} active={props.active}> 
         {props.children}
       </NavLink>
     </li>

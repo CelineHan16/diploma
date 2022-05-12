@@ -1,3 +1,7 @@
+.NavItem {
+  display: flex;
+  align-items: center;
+}
 .NavItem a {
   display: block;
   padding: 1rem;
@@ -7,20 +11,13 @@
   font-weight: 600;
   letter-spacing: 0.1rem;
   text-decoration: none;
-  /* background-image: linear-gradient(
-    to right,
-    #54b3d6,
-    #54b3d6 50%,
-    #ffffff 50%
-  );
-  background-size: 200% 100%;
-  background-position: -100%; */
+  text-align: center;
   display: inline-block;
   position: relative;
   transition: all 0.1s ease-in-out;
 }
 .NavItem a:hover {
-  color: #2f7fca;
+  color: #071d31b4;
 }
 .NavItem a::after {
   content: "";
@@ -38,6 +35,6 @@
 .NavItem a:hover::after {
   transform: scaleX(1);
 }
-.NavItem a.active {
-  border-color: #0b1c2c;
-} 
+.NavItem a.active  {
+  text-decoration: underline;
+}
