@@ -1,15 +1,16 @@
 .NavToggle {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png");
+  background-image: url("../../../assets/burger-menu.svg");
 
   display: none;
 
   padding: 1rem 1.5rem;
-  min-height: 61px;
+  min-height: 60px;
 
   vertical-align: middle;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;
+  cursor: pointer;
 
   background-color: transparent;
   color: #0b1c2c;
