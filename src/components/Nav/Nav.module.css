@@ -23,10 +23,6 @@
   display: flex;
 }
 .Nav .logo {
-  font-size: 1.6rem;
-  font-family: 'Roboto Slab', serif;
-  letter-spacing: .2em;
-  color: #0b1c2c;
   padding: 0;
   margin: 0;
   text-decoration: none;
