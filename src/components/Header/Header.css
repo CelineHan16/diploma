@@ -50,6 +50,7 @@
 @media (max-width: 900px) {
   .Header section {
     min-width: 200px;
+    left: auto;
   }
   .Header section h1 {
     font-size: 1.8rem;
