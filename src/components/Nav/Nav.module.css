@@ -1,15 +1,4 @@
 .Nav {
-  background-color: #fffffff3;
-  padding: 0 1.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
-
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 5;
-}
-.Nav .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,8 +39,5 @@
 @media (max-width: 900px) {
   .Nav ul {
     display: none;
-  }
-  .Nav {
-    padding: .7rem;
   }
 }
