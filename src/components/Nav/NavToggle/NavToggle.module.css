@@ -1,4 +1,4 @@
-.NavToggle {
+/* .NavToggle {
   background-image: url("../../../assets/burger-menu.svg");
 
   display: none;
@@ -15,6 +15,23 @@
   background-color: transparent;
   color: #0b1c2c;
   border: none;
+} */
+.NavToggle {
+  display: none;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.NavToggle div {
+  width: 25px;
+  height: 2px;
+  margin: 5px;
+  background-color: #0b1c2c;
+}
+.NavToggle .line2 {
+  width: 17px;
+  margin: 0 auto;
 }
 
 @media (max-width: 900px) {

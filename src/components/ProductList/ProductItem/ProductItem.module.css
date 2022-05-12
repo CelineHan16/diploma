@@ -9,6 +9,7 @@
 .ProductItem {
   position: relative;
   flex: 0 0 350px;
+  margin: 0 auto;
   margin-bottom: 2rem;
   margin-top: 1rem;
   text-align: center;

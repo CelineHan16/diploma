@@ -51,4 +51,7 @@
   .Nav ul {
     display: none;
   }
+  .Nav {
+    padding: .7rem;
+  }
 }

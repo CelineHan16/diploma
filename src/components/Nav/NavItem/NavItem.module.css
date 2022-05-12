@@ -36,5 +36,5 @@
   transform: scaleX(1);
 }
 .NavItem a.active  {
-  text-decoration: underline;
+  background-color: rgb(226, 223, 223);
 }
