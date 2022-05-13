@@ -6,7 +6,6 @@ import { NavLink } from "react-router-dom";
 import Search from "../../assets/search.svg";
 import Cart from "../../assets/cartIcon.svg";
 import User from "../../assets/userIcon.svg";
-// import NavToggle from "./NavToggle/NavToggle";
 
 function Nav() {
   return (

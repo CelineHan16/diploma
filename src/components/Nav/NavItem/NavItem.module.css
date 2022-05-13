@@ -29,7 +29,6 @@
   background-color: #0b1c2c;
   transform: scaleX(0);
   transform-origin: bottom left;
-
   transition: transform 0.3s;
 }
 .NavItem a:hover::after {
