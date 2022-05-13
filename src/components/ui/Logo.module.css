@@ -9,5 +9,6 @@
 @media (max-width: 900px) {
   .Logo {
     letter-spacing: .1rem;
+    font-size: 1.4rem;
   }
 }
