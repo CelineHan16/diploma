@@ -38,7 +38,11 @@
 }
 
 @media (max-width: 900px) {
-  .Nav ul {
-    display: none;
+  .Nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Nav .logo {
+    order: -1;
   }
 }
