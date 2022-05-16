@@ -21,7 +21,7 @@
 .Drawer ul {
   flex-direction: column;
 }
-.Drawer .Nav .logo {
+.Drawer > .content > .Nav > .logo {
   display: none;
 }
 .open .content {
