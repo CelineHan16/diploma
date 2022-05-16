@@ -56,3 +56,11 @@
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
+@media (max-width: 900px) {
+  .ProductItem {
+    flex: 0 0 200px;
+  }
+  .ProductItem .price {
+    font-size: .9rem;
+  }
+}
