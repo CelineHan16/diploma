@@ -14,6 +14,7 @@ import Home from "./pages/Home";
 import Product from "./pages/Product";
 import NotFound from "./pages/NotFound";
 import Categories from "./pages/Categories";
+import Category from "./pages/Category";
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/shop/:productId" element={<Product />} />
           <Route path="/categories" element={<Categories />} />
-          <Route path="/categories/:categoryId" element={<Product />} />
+          <Route path="/categories/:categoryId" element={<Category />} />
           <Route path="/account" element={<Account />} />
           <Route path="/about" element={<About />} />
           <Route path="/specialdays" element={<SpecialDays />} />
