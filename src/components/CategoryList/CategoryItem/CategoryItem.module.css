@@ -1,4 +1,4 @@
-.CategryItem img {
+.CategoryItem img {
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -6,7 +6,7 @@
 
   box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
-.CategryItem {
+.CategoryItem {
   position: relative;
   flex: 0 0 350px;
   margin: 0 auto;
@@ -14,7 +14,7 @@
   margin-top: 1rem;
   text-align: center;
 }
-.ProductItem a {
+.CategoryItem a {
   
   color: #0b1c2c;
   margin-top: 15px;
@@ -24,7 +24,7 @@
   text-align: center;
   transition: .2s ease-in-out;
 }
-.CategryItem a::before {
+.CategoryItem a::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -38,12 +38,12 @@
   transition: transform .3s ease-in-out;
 }
 
-.ProductItem a:hover::before {
+.CategoryItem a:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
 @media (max-width: 900px) {
-  .CategryItem {
+  .CategoryItem {
     flex: 0 0 200px;
   }
 }
