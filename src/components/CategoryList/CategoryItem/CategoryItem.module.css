@@ -1,5 +1,6 @@
 .CategoryItem img {
   width: 100%;
+  height: 250px;
   object-fit: cover;
   object-position: center;
   margin-bottom: 10px;
@@ -8,7 +9,7 @@
 }
 .CategoryItem {
   position: relative;
-  flex: 0 0 350px;
+  flex: 0 0 250px;
   margin: 0 auto;
   margin-bottom: 2rem;
   margin-top: 1rem;
