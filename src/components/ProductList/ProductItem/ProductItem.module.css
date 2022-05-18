@@ -3,6 +3,7 @@
   object-fit: cover;
   object-position: center;
   margin-bottom: 10px;
+  border-radius: .5rem;
 
   box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
@@ -56,6 +57,12 @@
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
+/* .ProductItem .price {
+  font-family: 'Libre Baskerville', serif;
+  color: #0b1c2c;
+  font-size: .8rem;
+  margin-top: 10px;
+} */
 @media (max-width: 900px) {
   .ProductItem {
     flex: 0 0 200px;
