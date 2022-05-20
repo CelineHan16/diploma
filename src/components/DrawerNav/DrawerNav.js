@@ -1,0 +1,29 @@
+import classes from "./DrawerNav.module.css";
+import NavItem from "./NavItem/NavItem";
+import React from "react";
+import { NavLink } from "react-router-dom";
+import Search from "../../assets/search.svg";
+import Cart from "../../assets/cartIcon.svg";
+import User from "../../assets/userIcon.svg";
+
+function Nav() {
+  return (
+    <div className={classes.DrawerNav}>
+      <div className={classes.iconContainer}>
+        <NavLink to="/search" className={classes.icons}><img src={Search} className={classes.searchIcon} alt="Search" /></NavLink>
+        <NavLink to="/user" className={classes.icons}><img src={User} className={classes.userIcon} alt="Account" /></NavLink>
+        <NavLink to="/cart" className={classes.icons}><img src={Cart} className={classes.cartIcon} alt="Cart" /></NavLink>
+      </div>
+      <ul>
+        <NavItem url="/shop">Shop</NavItem>
+        <NavItem url="/specialdays">Special days</NavItem>
+        <NavItem url="/delivery">Delivery</NavItem>
+        <NavItem url="/location">Location</NavItem>
+        <NavItem url="/about">About</NavItem>
+        <NavItem url="/account">Contacts</NavItem>
+      </ul>
+    </div>
+  );
+}
+
+export default Nav;
