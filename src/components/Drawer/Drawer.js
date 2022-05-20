@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "../Nav/Nav";
+import DrawerNav from "../DrawerNav/DrawerNav";
 import classes from "./Drawer.module.css";
 
 function Drawer({ open }) {
@@ -11,7 +11,7 @@ function Drawer({ open }) {
   return (
     <div className={classNames.join(" ")}>
       <div className={classes.content}>
-        <Nav />
+        <DrawerNav />
       </div>
     </div>
   );
