@@ -1,4 +1,4 @@
-import bestSellersImage from "../assets/bestSellers.jpg";
+import bestSellersImage from "../assets/bestseller1.jpg";
 // import allProductsImage from "../assets/allProducts.jpg";
 import holidayGiftingImage from "../assets/holidayGifting.jpg";
 import birthdayImage from "../assets/birthday.jpg";
