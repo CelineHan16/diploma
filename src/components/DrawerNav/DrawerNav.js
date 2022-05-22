@@ -6,7 +6,11 @@ import Search from "../../assets/search.svg";
 import Cart from "../../assets/cartIcon.svg";
 import User from "../../assets/userIcon.svg";
 
-function Nav() {
+function Nav({ callBack, toggle }) {
+  const classNames = [classes.NavToggle];
+  if (toggle) {
+    classNames.push(classes.toggle)
+  };
   return (
     <div className={classes.DrawerNav}>
       <div className={classes.iconContainer}>
@@ -15,12 +19,12 @@ function Nav() {
         <NavLink to="/cart" className={classes.icons}><img src={Cart} className={classes.cartIcon} alt="Cart" /></NavLink>
       </div>
       <ul>
-        <NavItem url="/shop">Shop</NavItem>
-        <NavItem url="/specialdays">Special days</NavItem>
-        <NavItem url="/delivery">Delivery</NavItem>
-        <NavItem url="/location">Location</NavItem>
-        <NavItem url="/about">About</NavItem>
-        <NavItem url="/account">Contacts</NavItem>
+        <NavItem url="/shop" onClick={callBack} className={classNames.join(" ")}>Shop</NavItem>
+        <NavItem url="/specialdays" onClick={callBack} className={classNames.join(" ")}>Special days</NavItem>
+        <NavItem url="/delivery" onClick={callBack} className={classNames.join(" ")}>Delivery</NavItem>
+        <NavItem url="/location" onClick={callBack} className={classNames.join(" ")}>Location</NavItem>
+        <NavItem url="/about" onClick={callBack} className={classNames.join(" ")}>About</NavItem>
+        <NavItem url="/account" onClick={callBack} className={classNames.join(" ")}>Contacts</NavItem>
       </ul>
     </div>
   );
