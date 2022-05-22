@@ -11,7 +11,7 @@ import Delivery from "./pages/Delivery";
 import Location from "./pages/Location";
 import Unveil from "./pages/Unveil";
 import Home from "./pages/Home";
-import Product from "./pages/Product";
+import Product from "./pages/Product/Product";
 import NotFound from "./pages/NotFound";
 import Categories from "./pages/Categories";
 import Category from "./pages/Category";
