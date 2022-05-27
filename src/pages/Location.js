@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header/Header";
-import headerImage from "../assets/locationHeader-img.jpg";
+import headerImage from "../assets/copylocationHeader-img.jpg";
 // import "./style.css";
 
 function Location() {
