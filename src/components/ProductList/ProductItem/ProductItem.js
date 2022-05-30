@@ -7,7 +7,7 @@ function ProductItem({ product }) {
     <div className={classes.ProductItem}>
       <Link to={"/shop/" + product.productId}><img src={product.image} alt={product.title} /></Link>
       <Link to={"/shop/" + product.productId}>{product.title}</Link>
-      <div className={classes.price}>{product.price}$</div>
+      <div className={classes.price}><span>{product.price}$</span></div>
     </div>
   );
 }
