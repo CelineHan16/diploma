@@ -11,6 +11,7 @@
   font-weight: 600;
   letter-spacing: 0.1rem;
   text-decoration: none;
+  text-shadow: 0px 0px .2px #0b1c2c7c;
   text-align: center;
   display: inline-block;
   position: relative;
@@ -21,7 +22,7 @@
   background-color: rgb(226, 223, 223);
 }
 .NavItem a:hover {
-  color: #071d31b4;
+  color: #071d31a4;
 }
 .NavItem a::after {
   content: "";
