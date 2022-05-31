@@ -6,14 +6,25 @@ import terrysChocolateCheesecakeImage from "../assets/terrysChocolateCheesecake.
 import raspberryRoseMarshmallowsImage from "../assets/raspberryRoseMarshmallows.jpg";
 import whiteChocolateFudgeImage from "../assets/whiteChocolatecranBerryPistachioFudge.jpg";
 import strawberryCupcakesImage from "../assets/chocolateCoveredStrawberryCupcakes.jpg";
-import browniesClassicImage from "../assets/browniesClassic.jpg";
+import browniesClassicImage from "../assets/egglessWalnutBrownies.webp";
 import raspberryCookiesImage from "../assets/raspberryCookies.jpg";
 import raspberryPistachioSemifreddoImage from "../assets/raspberryPistachioSemifreddo.jpg";
 import signatureCookieImage from "../assets/signatureCookie.jpg";
 import classicPannetoneImage from "../assets/classicPannetone.jpg";
 import milkBarImage from "../assets/milkBar.jpg";
+import curvedCroissantImage from "../assets/curvedCroissant.png";
+import donnaHaysCakeImage from "../assets/donnaHaysChocolateMeringueCake.jpg";
+import pistachioBlondiesImage from "../assets/whitechocolatepistachioblondies.jpg";
 
 const products = [
+  {
+    image: curvedCroissantImage,
+    productId: "curved-croissant",
+    categoryId: "bake-at-home",
+    title: "Curved Croissant",
+    description: "A light, flaky and crisp curved croissant: the perfect way to start the day.",
+    price: 3,
+  },
   {
     image: mixedBerryTartImage,
     productId: "mixed-berry-tart",
@@ -83,7 +94,7 @@ const products = [
     productId: "raspberry-pistachio-semifreddo",
     categoryId: "best-sellers",
     title: "Raspberry Pistachio Semifreddo",
-    description: "Think of this raspberry pistachio semifreddo as a spectacularly elegant no-churn ice cream. It’s gorgeous, easy-to-make, and memorable—and best of all, it can be made year-round using frozen berries!",
+    description: "Think of this raspberry pistachio semifreddo as a spectacularly elegant no-churn ice cream. It's gorgeous, easy-to-make, and memorable—and best of all, it can be made year-round using frozen berries!",
     price: 21,
   },
   {
@@ -95,12 +106,28 @@ const products = [
     price: 14,
   },
   {
+    image: donnaHaysCakeImage,
+    productId: "donna-hays-chocolate-cake",
+    categoryId: "birthday",
+    title: "Donna Hay's Chocolate Meringue Cake",
+    description: "Celebrate the holidays with the ultimate Christmas treat — panettone! Olivieri 1882 is a 6th generation, family owned pasticceria known for their handmade, artisanal traditional panettone cakes. Made with fine ingredients like hand-minced candied oranges.",
+    price: 20,
+  },
+  {
     image: classicPannetoneImage,
     productId: "classic-pannetone",
     categoryId: "holiday-gifting",
     title: "Classic Pannetone",
     description: "Celebrate the holidays with the ultimate Christmas treat — panettone! Olivieri 1882 is a 6th generation, family owned pasticceria known for their handmade, artisanal traditional panettone cakes. Made with fine ingredients like hand-minced candied oranges, Tahiti Bourbon vanilla and natural sourdough, this dough passes through a 48-hour double fermentation and is free of preservatives. From the panettone classico to novel flavor combinations like Peach Amaretto Chocolate, Sour Cherry, and Apple Cinnamon Raisin, these are the perfect soft, cloud-like breads to gift this season.",
     price: 15,
+  },
+  {
+    image: pistachioBlondiesImage,
+    productId: "white-chocolate-pistachio-blondies",
+    categoryId: "holiday-gifting",
+    title: "White Chocolate Pistachio Blondies",
+    description: "Christina Tosi's sweets empire, Milk Bar, has the most indulgent, delicious and nostalgic baked goodies. You cannot go wrong with gifting this set of Milk Bar Pie, which is their signature pie that has.",
+    price: 19,
   },
   {
     image: milkBarImage,
