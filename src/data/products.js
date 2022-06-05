@@ -1,6 +1,6 @@
 // import React from "react";
 
-import mixedBerryTartImage from "../assets/mixedBerryTart.jpg";
+import mixedBerryTartImage from "../assets/mixed-berry-tarts.jpeg";
 import whiteChocolateSalamiImage from "../assets/whiteChocolateSalami.jpg";
 import terrysChocolateCheesecakeImage from "../assets/terrysChocolateCheesecake.jpg";
 import raspberryRoseMarshmallowsImage from "../assets/raspberryRoseMarshmallows.jpg";
@@ -15,6 +15,9 @@ import milkBarImage from "../assets/milkBar.jpg";
 import curvedCroissantImage from "../assets/curvedCroissant.png";
 import donnaHaysCakeImage from "../assets/donnaHaysChocolateMeringueCake.jpg";
 import pistachioBlondiesImage from "../assets/whitechocolatepistachioblondies.jpg";
+import cinnamonRollsImage from "../assets/cinnamonRolls.jpg";
+import jellyDoughnutsImage from "../assets/jellyDoughnuts.jpg";
+import pecanPieImage from "../assets/pecanPie.jpg";
 
 const products = [
   {
@@ -29,7 +32,7 @@ const products = [
     image: mixedBerryTartImage,
     productId: "mixed-berry-tart",
     categoryId: "bake-at-home",
-    title: "Mixed Berry Tart",
+    title: "Mixed Berry Tarts",
     description: "Taste your favorite combination of berries to top this play on a classic cheesecake. Lightly sweetened berries top pastry cream contained in a graham cracker crust.",
     price: 11,
   },
@@ -48,6 +51,14 @@ const products = [
     title: "Terry's Chocolate Cheesecake",
     description: "Our chocolate orange cheesecake is absolutely the alternative festive dessert you need in your life. Forget the fact that chocolate and orange is already a perfect food flavour combination - but the addition of actual Terry's chocolate makes this cheesecake 100% tasty af.",
     price: 17,
+  },
+  {
+    image: cinnamonRollsImage,
+    productId: "cinnnamon-rolls",
+    categoryId: "bake-at-home",
+    title: "Cinnamon Rolls",
+    description: "Elevate mom's breakfast in bed with fresh-from-the-oven cinnamon rolls. A fan-favorite, our bake at home cinnamon rolls are made with tender brioche dough, an abundance of brown sugar and cinnamon, and topped with a tangy cream cheese frosting.",
+    price: 10,
   },
   {
     image: raspberryRoseMarshmallowsImage,
@@ -71,6 +82,14 @@ const products = [
     categoryId: "birthday",
     title: "Chocolate Strawberry Cupcakes",
     description: "These cupcakes are chocolatey, the frosting is full of strawberry flavor and naturally colored thanks to a secret ingredient, and they are all topped with a chocolate covered strawberry.",
+    price: 15,
+  },
+  {
+    image: jellyDoughnutsImage,
+    productId: "jelly-doughnuts",
+    categoryId: "bake-at-home",
+    title: "Jelly Doughnuts",
+    description: "As we change from coats to summer dresses, we are also transitioning our doughnuts from old-fashioned to jelly-filled. Welcome the newest member of our pastry offering: a jelly doughnut worthy of praise, high-fives, and big bites. We're starting with raspberry and already dreaming up our next flavor.",
     price: 15,
   },
   {
@@ -128,6 +147,14 @@ const products = [
     title: "White Chocolate Pistachio Blondies",
     description: "Christina Tosi's sweets empire, Milk Bar, has the most indulgent, delicious and nostalgic baked goodies. You cannot go wrong with gifting this set of Milk Bar Pie, which is their signature pie that has.",
     price: 19,
+  },
+  {
+    image: pecanPieImage,
+    productId: "pecan-pie",
+    categoryId: "best-sellers",
+    title: "Pecan Pie",
+    description: "Pecan pie. Flaky crust. A mountain of pecans. Sweetened with maple syrup and a whole lotta love. Available in the bakeries by the slice and whole. Order for thanksgiving and take a piece to snack on now.",
+    price: 23,
   },
   {
     image: milkBarImage,
