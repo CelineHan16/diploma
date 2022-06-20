@@ -8,7 +8,6 @@
   font-size: 2rem;
   text-align: center;
   letter-spacing: 2px;
-  /* font-weight: 500; */
   margin: 50px;
 }
 .aboutSection p {
@@ -44,8 +43,7 @@
   position: relative;
 }
 .secondSection .fork { 
-  /* float: left;
-  margin-right: 50px; */
+  max-width: 238px;
   position: absolute;
   top: -130px;
 }
@@ -72,4 +70,50 @@
 .thirdSection p {
   text-align: center;
   margin: 0 auto;
+}
+
+@media (max-width: 1070px) {
+  .container {
+    margin: 0 50px 50px;
+  }
+  .firstSection {
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+  .container h1 {
+    font-size: 1.7rem;
+  }
+  .aboutCollage {
+    margin-left: 0;
+    margin: 0 auto;
+  }
+  .firstSection div {
+    margin-top: 10px;
+  }
+  .firstSection p:first-child {
+    margin-bottom: 20px;
+  }
+  .aboutSection p {
+    text-align: center;
+  }
+  .secondSection .fork {
+    width: 150px;
+    top: -190px;
+  }
+  .secondSection p {
+    color: white;
+    margin-left: 0;
+  }
+  .darkBg {
+    padding: 130px 0;
+  }
+  .secondSection .buffet {
+    width: 280px;
+  }
+  .thirdSection {
+    margin-top: 100px;
+  }
+  .secondSection h1 {
+    margin-left: 140px;
+  }
 }
