@@ -20,6 +20,7 @@
 }
 .NavItem a.active  {
   background-color: rgb(226, 223, 223);
+  border-bottom: 1px solid #000;
 }
 .NavItem a:hover {
   color: #071d31a4;
