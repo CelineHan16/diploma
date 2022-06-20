@@ -7,7 +7,7 @@ import Shop from "./pages/Shop";
 import Account from "./pages/Contacts";
 import About from "./pages/About/About";
 import SpecialDays from "./pages/SpecialDays";
-import Delivery from "./pages/Delivery";
+// import Delivery from "./pages/Delivery";
 import Location from "./pages/Location";
 import Unveil from "./pages/Unveil";
 import Home from "./pages/Home";
@@ -30,7 +30,7 @@ function App() {
           <Route path="/account" element={<Account />} />
           <Route path="/about" element={<About />} />
           <Route path="/specialdays" element={<SpecialDays />} />
-          <Route path="/delivery" element={<Delivery />} />
+          {/* <Route path="/delivery" element={<Delivery />} /> */}
           <Route path="/location" element={<Location />} />
           <Route path="/unveil" element={<Unveil />} />
           <Route path="/" element={<Home />} />
