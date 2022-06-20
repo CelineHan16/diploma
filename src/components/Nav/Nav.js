@@ -13,7 +13,7 @@ function Nav() {
       <ul>
         <NavItem url="/shop">Shop</NavItem>
         <NavItem url="/specialdays">Special days</NavItem>
-        <NavItem url="/delivery">Delivery</NavItem>
+        {/* <NavItem url="/delivery">Delivery</NavItem> */}
         <NavItem url="/location">Location</NavItem>
       </ul>
       <NavLink to="/" className={classes.logo}><Logo /></NavLink>
