@@ -44,6 +44,7 @@
   position: relative;
 }
 .secondSection .fork { 
+  width: 100%;
   max-width: 238px;
   position: absolute;
   top: -130px;
@@ -92,6 +93,15 @@
     width: 100%;
     max-width: 400px;
   }
+  .secondSection .fork {
+    width: 100%;
+    max-width: 150px;
+    top: -190px;
+  }
+  .secondSection .buffet {
+    width: 100%;
+    max-width: 280px;
+  }
   .firstSection div {
     margin-top: 10px;
   }
@@ -102,19 +112,12 @@
     text-align: center;
     font-size: 15px;
   }
-  .secondSection .fork {
-    width: 150px;
-    top: -190px;
-  }
   .secondSection p {
     color: white;
     margin-left: 0;
   }
   .darkBg {
     padding: 130px 0;
-  }
-  .secondSection .buffet {
-    width: 280px;
   }
   .thirdSection {
     margin-top: 100px;
