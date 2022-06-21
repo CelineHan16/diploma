@@ -27,6 +27,7 @@
   margin-bottom: 50px;
 }
 .aboutCollage {
+  width: 100%;
   max-width: 500px;
   margin-left: 50px;
 }
@@ -50,6 +51,8 @@
 .secondSection .buffet { 
   float: right;
   margin-left: 50px;
+  width: 100%;
+  max-width: 335px;
 }
 .secondSection p {
   color: white;
@@ -86,7 +89,8 @@
   .aboutCollage {
     margin-left: 0;
     margin: 0 auto;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
   }
   .firstSection div {
     margin-top: 10px;
