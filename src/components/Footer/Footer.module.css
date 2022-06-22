@@ -1,12 +1,80 @@
 .Footer {
   background-color: #0b1c2c;
   color: #efeee8;
-  padding: 1rem;
+  padding: 3em 0;
   text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: .5px;
 }
 .Footer p {
-  font-size: .8rem;
+  font-size: .9rem;
 }
 .Footer a {
   color: #efeee8;
+}
+.Footer .container {
+  padding: 0 5em;
+  display: flex;
+  justify-content: space-between;
+}
+.Footer .container ul {
+  list-style: none;
+}
+.Footer .container .title {
+  width: 300px;
+}
+.Footer .container .title h3 {
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.Footer .container .form form input, button {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(129, 128, 128);
+  padding: 10px;
+  font-size: .9rem;
+  color: white;
+}
+.Footer .container .form form input {
+  outline: none;
+  max-width: 300px;
+}
+.Footer .container .form form button {
+  cursor: pointer;
+}
+.Footer .container .socialLinks {
+  margin-top: 15px;
+}
+.Footer .container .socialLinks img {
+  color: white;
+  width: 30px;
+  margin: 5px;
+}
+.Footer .container .socialLinks ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1030px) {
+  .Footer .container {
+    flex-direction: column;
+  }
+  .Footer .container .title {
+    width: 100%;
+  }
+  .Footer p {
+    font-size: .7rem;
+  }
+  .Footer .container .pages ul {
+    margin-top: 30px;
+    padding: 0;
+    font-size: .8rem;
+  }
+  .Footer .container .socialLinks ul {
+    padding: 0;
+  }
+  .Footer .container .socialLinks img {
+    width: 15px;
+  }
 }
