@@ -1,0 +1,27 @@
+.CartLink {
+  text-decoration: none;
+  position: relative;
+}
+.cartIcon {
+  width: 14.9px;
+  padding: .9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0b1c2c;
+}
+.CartLink .number {
+  position: absolute;
+  width: 17px;
+  height: 15px;
+  padding-bottom: 2px;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: top;
+  color: white;
+  background-color: #0b1c2c;
+  border: 1px white solid;
+  border-radius: 50%;
+  left: 20px;
+  bottom: 2px;
+}
