@@ -17,9 +17,6 @@
   transition: all 0.1s ease-in-out;
   border-left: 3px solid transparent;
 }
-.NavItem a.active  {
-  background-color: rgb(226, 223, 223);
-}
 .NavItem a:hover {
   color: #071d31b4;
 }
@@ -36,6 +33,9 @@
   transition: transform 0.3s;
 }
 .NavItem a:hover::after {
+  transform: scaleX(1);
+}
+.NavItem a.active::after {
   transform: scaleX(1);
 }
 @media (max-width: 900px) {
