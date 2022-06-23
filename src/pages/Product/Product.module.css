@@ -19,16 +19,6 @@
 .Product div p {
   font-size: 1.2rem;
 }
-.Product div button {
-  font-size: 1rem;
-  font-family: serif;
-  padding: 0.5rem;
-  color: white;
-  background-color: #0b1c2c;
-  border: solid 1px grey;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
 
 @media (max-width: 745px) {
