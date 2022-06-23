@@ -3,8 +3,8 @@ import NavItem from "./NavItem/NavItem";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Search from "../../assets/search.svg";
-import Cart from "../../assets/cartIcon.svg";
 import User from "../../assets/userIcon.svg";
+import CartLink from "../CartLink/CartLink";
 
 function Nav({ callBack, toggle }) {
   const classNames = [classes.NavToggle];
@@ -17,7 +17,7 @@ function Nav({ callBack, toggle }) {
       <div className={classes.iconContainer}>
         <NavLink to="/search" className={classes.icons}><img src={Search} className={classes.searchIcon} alt="Search" /></NavLink>
         <NavLink to="/user" className={classes.icons}><img src={User} className={classes.userIcon} alt="Account" /></NavLink>
-        <NavLink to="/cart" className={classes.icons}><img src={Cart} className={classes.cartIcon} alt="Cart" /></NavLink>
+        <NavLink to="/cart" className={classes.icons}><CartLink /></NavLink>
       </div>
       <ul>
         <NavItem url="/shop" onClick={callBack} className={classNames.join(" ")}>Shop</NavItem>
