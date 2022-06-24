@@ -20,7 +20,7 @@ function Nav() {
         <NavItem url="/about">About</NavItem>
         <NavItem url="/account">Contacts</NavItem>
         <NavLink to="/search" className={classes.icons}><img src={Search} className={classes.searchIcon} alt="Search" /></NavLink>
-        <NavLink to="/account" className={classes.icons}><img src={User} className={classes.userIcon} alt="Account" /></NavLink>
+        <NavLink to="/auth" className={classes.icons}><img src={User} className={classes.userIcon} alt="Account" /></NavLink>
         <NavLink to="/cart" className={classes.icons}><CartLink /></NavLink>
       </ul>
     </div>
