@@ -16,7 +16,7 @@ function Nav({ callBack, toggle }) {
     <div className={classes.DrawerNav}>
       <div className={classes.iconContainer}>
         <NavLink to="/search" className={classes.icons}><img src={Search} className={classes.searchIcon} alt="Search" /></NavLink>
-        <NavLink to="/user" className={classes.icons}><img src={User} className={classes.userIcon} alt="Account" /></NavLink>
+        <NavLink to="/auth" className={classes.icons}><img src={User} className={classes.userIcon} alt="Account" /></NavLink>
         <NavLink to="/cart" className={classes.icons}><CartLink /></NavLink>
       </div>
       <ul>
