@@ -34,7 +34,6 @@ function Cart() {
               className={classes.changeButton} 
               onClick={() => dispatch({ type: "cart/increment", payload: product.productId })}>+</button>
           </div>
-          
           <span className={classes.productPrice}>
             ${product.price * items[product.productId]}
           </span> 
@@ -55,11 +54,13 @@ function Cart() {
         <div className={classes.cartHeader}>
           <h1>Your Shopping Cart</h1>
           <p>Please review items in your cart.</p>
-        </div>
-        <div className={classes.productList}>
           {output}
         </div>
-        <div className={classes.totalPrice}>Total: ${total}</div>
+        <div className={classes.totalPrice}>
+          <h2>Order summary</h2>
+          Total: ${total} <br />
+          <Link to="/checkout"><button className={classes.checkoutButton}>Checkout</button></Link>
+        </div>
       </div>
     </div>
   );
