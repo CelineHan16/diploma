@@ -16,6 +16,8 @@ import Category from "./pages/Category";
 import Cart from "./pages/Cart/Cart";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
+import Checkout from "./pages/Checkout/Checkout";
+import Auth from "./pages/Auth/Auth";
 
 
 function App() {
@@ -42,6 +44,8 @@ function App() {
           <Route path="/unveil" element={<Unveil />} />
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/auth" element={<Auth />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
