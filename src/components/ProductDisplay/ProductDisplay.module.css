@@ -1,0 +1,32 @@
+.ProductDisplay {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+.ProductDisplay img {
+  max-width: 450px;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+.ProductDisplay div {
+  padding: 1rem;
+  font-family: serif;
+  text-align: center;
+}
+.ProductDisplay div h2 {
+  margin-top: 0;
+}
+.ProductDisplay div p {
+  font-size: 1.2rem;
+}
+
+
+@media (max-width: 745px) {
+  .ProductDisplay {
+    flex-direction: column;
+  }
+  .ProductDisplay img {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
