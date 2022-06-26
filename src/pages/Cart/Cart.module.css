@@ -32,10 +32,10 @@
 .Cart .container .productCard {
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   text-decoration: none;
   color: #0b1c2c;
-  max-width: 400px;
+  width: 400px;
   cursor: default;
 }
 .Cart .container .productImage {
@@ -84,7 +84,7 @@
   margin: 15px;
   padding: 10px 50px;
   font-size: 1.2rem;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: serif;
   letter-spacing: 2px;
   color: white;
   background-color: #0b1c2c;
@@ -123,6 +123,9 @@
 }
 
 @media (max-width: 800px) {
+  .Cart {
+    padding: 20px 0;
+  }
   .Cart .container {
     padding: 0 80px;
   }
@@ -138,7 +141,8 @@
   .Cart .container .item div {
     margin: 10px 0;
   }
-  .Cart .container .productCard, .productImage {
+  .Cart .container .productCard {
+    max-width: 350px;
     margin-right: 0px;
   }
   .Cart .container .productImage {
