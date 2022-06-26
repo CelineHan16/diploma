@@ -3,7 +3,6 @@ import Header from "../components/Header/Header";
 import headerImage from "../assets/header-img3.jpg";
 import CategoryList from "../components/CategoryList/CategoryList";
 import { getCategories } from "../data/categories";
-// import "./style.css";
 
 function Home() {
   return (

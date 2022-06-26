@@ -5,6 +5,7 @@ import ProductList from "../components/ProductList/ProductList";
 import { getProducts } from "../data/products";
 import CategoryList from "../components/CategoryList/CategoryList";
 import { getCategories } from "../data/categories";
+
 function Shop() {
   return (
     <>
