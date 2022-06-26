@@ -19,13 +19,13 @@ function Checkout() {
 
       return (
         <div>
-          <Link to="">{product.title}</Link> {items[product.productId]} ${product.price * items[product.productId]}
+          <Link to={"/cart/" + product.productId}>{product.title}</Link> {items[product.productId]} ${product.price * items[product.productId]}
         </div>
       );
     });
 
-  if (!output) {
-    output = "No items in the cart.";
+  if (!output.length) {
+    navigate('/');
   }
 
   function onCheckout(event) {
