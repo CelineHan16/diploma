@@ -1,10 +1,11 @@
 // import Header from "../../components/Header/Header";
-import classes from "./Cart.module.css";
 // import image from "../../assets/new_img.webp";
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../../data/products";
 import { Link } from "react-router-dom";
 import React from "react";
+import classes from "./Cart.module.css";
+import { increment, decrement, remove } from "../../redux/cartSlice";
 
 function Cart() {
   const items = useSelector(store => store.cart.items);
@@ -19,33 +20,42 @@ function Cart() {
 
       return (
         <div className={classes.item}>
-          <Link to="" className={classes.productCard}>
+          <Link to={"/cart/" + product.productId} className={classes.productCard}>
             <img src={product.image} alt={product.title} className={classes.productImage} />
             {product.title}
           </Link> 
           <div>
             <button 
             className={classes.changeButton} 
-            onClick={() => dispatch({ type: "cart/decrement", payload: product.productId })}>-</button>
+            onClick={() => dispatch(decrement(product.productId))}>-</button>
             <span className={classes.productQuantity}>
               {items[product.productId]}
             </span> 
             <button 
               className={classes.changeButton} 
-              onClick={() => dispatch({ type: "cart/increment", payload: product.productId })}>+</button>
+              onClick={() => dispatch(increment(product.productId))}>+</button>
           </div>
           <span className={classes.productPrice}>
             ${product.price * items[product.productId]}
           </span> 
           <button 
             className={classes.deleteButton} 
-            onClick={() => dispatch({ type: "cart/delete", payload: product.productId })}>Delete</button>
+            onClick={() => dispatch(remove(product.productId))}>Delete</button>
         </div>
       );
     });
 
-  if (!output) {
-    output = "No items in the cart.";
+  if (!output.length) {
+    output = (
+      <>
+        <div>No items in the cart.</div>
+        <Link to="/shop">
+          <button className={classes.checkoutButton}>
+            Continue shopping
+          </button>
+        </Link>
+      </>
+    );
   }
 
   return (
