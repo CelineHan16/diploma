@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Shop from "./pages/Shop";
 import Account from "./pages/Contacts";
-import About from "./pages/About/About";
+import About from "./pages/About";
 import SpecialDays from "./pages/SpecialDays";
 import Location from "./pages/Location";
 import Unveil from "./pages/Unveil";
@@ -15,7 +15,7 @@ import Categories from "./pages/Categories";
 import Category from "./pages/Category";
 import Cart from "./pages/Cart/Cart";
 import Checkout from "./pages/Checkout/Checkout";
-import Auth from "./pages/Auth/Auth";
+import Auth from "./pages/Auth";
 
 
 function App() {
