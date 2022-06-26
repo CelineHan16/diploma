@@ -9,7 +9,7 @@ import SpecialDays from "./pages/SpecialDays";
 import Location from "./pages/Location";
 import Unveil from "./pages/Unveil";
 import Home from "./pages/Home";
-import Product from "./pages/Product/Product";
+import Product from "./pages/Product";
 import NotFound from "./pages/NotFound";
 import Categories from "./pages/Categories";
 import Category from "./pages/Category";
