@@ -19,6 +19,7 @@
 }
 .Footer .container ul {
   list-style: none;
+  padding: 0;
 }
 .Footer .container .title {
   width: 300px;
