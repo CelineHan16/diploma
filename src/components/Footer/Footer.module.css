@@ -42,7 +42,12 @@
   max-width: 300px;
 }
 .Footer .container .form form button {
+  margin: 0;
+  padding-bottom: 9.5px;
   cursor: pointer;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgb(129, 128, 128);
 }
 .Footer .container .socialLinks {
   margin-top: 15px;
