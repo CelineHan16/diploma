@@ -29,19 +29,6 @@ function CheckoutDisplay() {
       );
     });
 
-  if (!output.length) {
-    output = (
-      <>
-        <div>No items in the cart.</div>
-        <Link to="/shop">
-          <button className={classes.checkoutButton}>
-            Get products now
-          </button>
-        </Link>
-      </>
-    );
-  }
-
   function onCheckout(event) {
     event.preventDefault();
 
