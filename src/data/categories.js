@@ -11,12 +11,6 @@ const categories = [
     image: bestSellersImage,
     description: "Our best-selling pastries and confections will brighten everyone's day.",
   },
-  // {
-  //   categoryId: "all-products",
-  //   title: "All products",
-  //   image: allProductsImage,
-  //   desription: "",
-  // },
   {
     categoryId: "holiday-gifting",
     title: "Holiday gifting",
