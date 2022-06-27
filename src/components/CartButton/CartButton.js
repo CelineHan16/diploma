@@ -20,6 +20,8 @@ export default function CartButton({ productId, price }) {
   }
 
   return (
-    <button className={classes.CartButton} onClick={onAddToCart}>Add to card - $ {product.price}</button>
+    <button className={classes.CartButton} onClick={onAddToCart}>
+      Add to cart - $ {product.price}
+    </button>
   );
 }
