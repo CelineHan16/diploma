@@ -1,9 +1,13 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { start } from "../../redux/authSlice";
+import classes from "./AuthDisplay.module.css";
+import image from "../../assets/header-img.jpg"
 
 export default function AuthDisplay() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   function onAuthStart(event) {
     event.preventDefault();
@@ -12,24 +16,27 @@ export default function AuthDisplay() {
     dispatch(start({
       email: formData.get('email'),
       password: formData.get('password'),
-      method: 'signup'
+      method: event.nativeEvent.submitter.innerText === "Sign up" ? 'signup' : 'signin'
     }));
+
+    navigate('/');
   }
 
   return (
-    <div>
+    <div className={classes.Auth}>
+      <img src={image} alt="Auth" />
       <form onSubmit={onAuthStart}>
-          <label>
-              Email:
-              <input type="email" name="email" />
-          </label>
-          <label>
-              Password:
-              <input type="password" name="password" />
-          </label>
+        <h1>Sign in</h1>
+        <p>Create an account to access your profile info, order history and more.</p>
+        <label>
+          <input type="email" name="email" placeholder="Email" />
+        </label>
+        <label>
+          <input type="password" name="password" placeholder="Password" />
+        </label>
 
-          <button>Sign in</button>
-          <button>Sign up</button>
+        <button>Sign in</button>
+        <button>Sign up</button>
       </form>
     </div>
   );
