@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { start } from "../../redux/authSlice";
 import classes from "./AuthDisplay.module.css";
@@ -7,6 +7,7 @@ import image from "../../assets/header-img.jpg"
 
 export default function AuthDisplay() {
   const dispatch = useDispatch();
+  const { error, localId } = useSelector(store => store.auth);
   const navigate = useNavigate();
 
   function onAuthStart(event) {
@@ -16,10 +17,17 @@ export default function AuthDisplay() {
     dispatch(start({
       email: formData.get('email'),
       password: formData.get('password'),
-      method: event.nativeEvent.submitter.innerText === "Sign up" ? 'signup' : 'signin'
+      method: event.nativeEvent.submitter.innerText === "Sign up" ? 'signup' : 'signin',
     }));
+  }
 
+  if (localId !== null) {
     navigate('/');
+  }
+
+  let errorOutput = null;
+  if (error) {
+    errorOutput = <strong style={{ color: "red" }}>{error}</strong>
   }
 
   return (
@@ -28,6 +36,7 @@ export default function AuthDisplay() {
       <form onSubmit={onAuthStart}>
         <h1>Sign in</h1>
         <p>Create an account to access your profile info, order history and more.</p>
+        {errorOutput}
         <label>
           <input type="email" name="email" placeholder="Email" />
         </label>
