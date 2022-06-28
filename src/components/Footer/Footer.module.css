@@ -60,6 +60,7 @@
 .Footer .container .socialLinks ul {
   display: flex;
   justify-content: space-between;
+  gap: 3px;
 }
 
 @media (max-width: 1030px) {
