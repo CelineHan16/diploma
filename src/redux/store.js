@@ -13,6 +13,8 @@ store.subscribe(() => {
   localStorage.setItem('cartItems', JSON.stringify(
     store.getState().cart.items
   ));
+
+  console.log(store.getState().auth);
 });
 
 export default store;
