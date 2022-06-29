@@ -31,10 +31,7 @@ const products = [
   {
     image: mixedBerryTartImage,
     productId: "mixed-berry-tart",
-    categoryId: [
-      "bake-at-home",
-      "holiday-gifting"
-    ],
+    categoryId: "best-sellers",
     title: "Mixed Berry Tarts",
     description: "Taste your favorite combination of berries to top this play on a classic cheesecake. Lightly sweetened berries top pastry cream contained in a graham cracker crust.",
     price: 11,
