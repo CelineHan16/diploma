@@ -48,6 +48,18 @@
   padding: 10px 5px;
   outline: none;
 }
+.Auth form button {
+  margin: 15px;
+  /* padding: 10px; */
+  font-size: 1rem;
+  font-family: serif;
+  padding: 0.6rem;
+  color: white;
+  background-color: #0b1c2c;
+  border: solid 1px grey;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 @media (max-width: 900px) {
   .Auth form {
