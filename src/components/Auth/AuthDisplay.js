@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { start } from "../../redux/authSlice";
 import classes from "./AuthDisplay.module.css";
-import image from "../../assets/header-img.jpg"
+import image from "../../assets/header-img.jpg";
 
 export default function AuthDisplay() {
   const dispatch = useDispatch();
