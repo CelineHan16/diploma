@@ -5,14 +5,14 @@
 /* .HomeDisplay .container {
   padding: 0 125px;
 } */
-.HomeDisplay h1, h3 {
+.HomeDisplay .container h1, h3 {
   text-transform: uppercase;
   font-family: italic;
   font-size: 2rem;
   font-weight: 500;
 }
 
-.HomeDisplay button {
+.discoverButton {
   margin: 25px 0 50px 0;
   padding: 15px 50px;
   font-size: 1.2rem;
@@ -26,8 +26,9 @@
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
+  z-index: 1;
 }
-.HomeDisplay button::after {
+.discoverButton::after {
   position: absolute;
   content: "";
   width: 0;
@@ -38,11 +39,11 @@
   background: rgba(255, 255, 255, 0.904);
   transition: all 0.3s ease;
 }
-.HomeDisplay button:hover {
+.discoverButton:hover {
   color: #0b1c2c;
   font-weight: 600;
 }
-.HomeDisplay button:hover:after {
+.discoverButton:hover:after {
   left: 0;
   width: 100%;
 }
@@ -94,8 +95,8 @@
 }
 
 @media (max-width: 900px) {
-  .HomeDisplay h1, h3 {
-    font-size: 1.5rem;
+  .HomeDisplay .container h1, h3 {
+    font-size: 1.4rem;
   }
   .HomeDisplay .first_section h4 {
     font-size: 1.3rem;
@@ -103,11 +104,14 @@
   .HomeDisplay p {
     font-size: 15px;
   }
-  .HomeDisplay button {
+  .discoverButton {
     margin: 0 0 25px;
     padding: 10px 30px;
     font-size: 1.1rem;
     letter-spacing: 2px;
+  }
+  .HomeDisplay .container h3 {
+    margin: 10px;
   }
 }
 @media (max-width: 750px) {
