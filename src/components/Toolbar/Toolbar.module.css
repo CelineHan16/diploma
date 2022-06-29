@@ -16,7 +16,7 @@
   }
   .Toolbar ul {
     display: none;
-  }
+  } 
   .Toolbar .container {
     display: flex;
     justify-content: space-between;
