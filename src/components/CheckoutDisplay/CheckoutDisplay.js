@@ -69,7 +69,6 @@ function CheckoutDisplay() {
             Last name:
             <input type="text" name="lastName" required />
           </label>
-          <br />
           <label>
             Address:
             <input type="text" name="address" required />
