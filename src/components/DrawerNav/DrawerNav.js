@@ -4,9 +4,13 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Search from "../../assets/search.svg";
 import User from "../../assets/userIcon.svg";
+import signout from "../../assets/signout.svg";
 import CartLink from "../CartLink/CartLink";
+import { useSelector } from "react-redux";
 
 function Nav({ callBack, toggle }) {
+  const isAuthenticated = useSelector(store => store.auth.idToken !== null);
+
   const classNames = [classes.NavToggle];
   if (toggle) {
     classNames.push(classes.toggle)
@@ -16,7 +20,16 @@ function Nav({ callBack, toggle }) {
     <div className={classes.DrawerNav}>
       <div className={classes.iconContainer}>
         <NavLink to="/search" className={classes.icons}><img src={Search} className={classes.searchIcon} alt="Search" /></NavLink>
-        <NavLink to="/auth" className={classes.icons}><img src={User} className={classes.userIcon} alt="Account" /></NavLink>
+        {!isAuthenticated ?
+          <NavLink to="/auth" className={classes.icons}>
+            <img src={User} className={classes.userIcon} alt="Account" />
+          </NavLink>
+        : null}
+        {isAuthenticated ? 
+          <NavLink to="/signout" className={classes.icons}>
+            <img src={signout} className={classes.userIcon} alt="Account" />
+          </NavLink> 
+        : null}
         <NavLink to="/cart" className={classes.icons}><CartLink /></NavLink>
       </div>
       <ul>
