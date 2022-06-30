@@ -2,7 +2,7 @@ import { NavLink, useMatch } from "react-router-dom";
 import classes from "./NavItem.module.css";
 import React from "react";
 
-function NavItem({ url, active, children }) {
+function NavItem({ url, children }) {
   return (
     <li className={classes.NavItem}>
       <NavLink to={url} className={useMatch(url) ? classes.active : null}> 
