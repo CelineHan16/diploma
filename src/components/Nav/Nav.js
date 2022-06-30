@@ -4,7 +4,7 @@ import Logo from "../ui/Logo";
 import NavItem from "./NavItem/NavItem";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Search from "../../assets/search.svg";
+// import Search from "../../assets/search.svg";
 import User from "../../assets/userIcon.svg";
 import signout from "../../assets/signout.svg";
 import CartLink from "../CartLink/CartLink";
@@ -23,7 +23,7 @@ function Nav() {
       <ul>
         <NavItem url="/about">About</NavItem>
         <NavItem url="/contacts">Contacts</NavItem>
-        <NavLink to="/search" className={classes.icons}><img src={Search} className={classes.searchIcon} alt="Search" /></NavLink>
+        {/* <NavLink to="/search" className={classes.icons}><img src={Search} className={classes.searchIcon} alt="Search" /></NavLink> */}
         {!isAuthenticated ?
           <NavLink to="/auth" className={classes.icons}>
             <img src={User} className={classes.userIcon} alt="Account" />
