@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import React from "react";
 import classes from "./CartDisplay.module.css";
 import { increment, decrement, remove } from "../../redux/cartSlice";
+import history from "../../assets/history.svg";
 
 function CartDisplay() {
   const items = useSelector(store => store.cart.items);
@@ -20,7 +21,7 @@ function CartDisplay() {
 
       return (
         <div className={classes.item}>
-          <Link to={"/cart/" + product.productId} className={classes.productCard}>
+          <Link key={product.productId} to={"/cart/" + product.productId} className={classes.productCard}>
             <img src={product.image} alt={product.title} className={classes.productImage} />
             {product.title}
           </Link> 
@@ -75,6 +76,11 @@ function CartDisplay() {
           <Link to={checkoutPath}>
             <button className={classes.checkoutButton}>Checkout</button>
           </Link>
+          <div>
+            <Link to="/history">
+              <img src={history} alt="History" className={classes.history} />
+            </Link>
+          </div>  
         </div>
       </div>
     </div>
