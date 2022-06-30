@@ -122,6 +122,10 @@
   font-size: 18px;
   font-weight: 600;
 }
+.Cart .container .history {
+  max-width: 40px;
+  padding: 10px;
+}
 
 @media (max-width: 800px) {
   .Cart {
