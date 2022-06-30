@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { getProducts } from "../../data/products";
 import { NavLink } from "react-router-dom";
+import classes from "./HistoryDisplay.module.css";
 
 function Orders() {
   const [orders, setOrders] = useState(null);
@@ -25,7 +26,7 @@ function Orders() {
       });
   }, []);
 
-  let output = <h1>Plase</h1>;
+  let output = <h1>Loading...</h1>;
   if (orders !== null) {
     orders
       .filter((idLocal) => idLocal.localId === localId)
@@ -42,21 +43,34 @@ function Orders() {
 
     output = showProducts.map((product) => {
       return (
-        <div key={product.productId}>
-          <div>
-            <div>
+
+        <div key={product.productId} className={classes.radios}>
+          <div className="row justify-content-center align-items-center my-5 px-3 mx-auto text-center">
+            <div className="col-md-4 p-auto">
               <img src={product.image} alt={product.title} height={200} width={180} />
             </div>
-            <div >
+            <div className="col-md-4 p-auto">
               <h3>{product.title}</h3>
-              <NavLink to={`/products/${product.productId}`}>Go product</NavLink>
+              <NavLink to={`/products/${product.productId}`} className="btn btn-outline-dark lead">Go product</NavLink>
             </div>
           </div>
         </div>
+
+
       );
     });
   }
-  return <div>{output}</div>;
+  return (
+    <div className={classes.OrdersView}>
+      <div className={classes.background}>
+        <div className="container">
+          <div className={classes.content}>
+            {output}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Orders;
