@@ -29,7 +29,7 @@ function CheckoutDisplay() {
       total += product.price * items[product.productId];
 
       return (
-        <li>
+        <li key={product.productId}>
           <div className={classes.orderItem}>
             <Link to={"/cart/" + product.productId}>{product.title}</Link>
             <span className={classes.productQuantity}>
